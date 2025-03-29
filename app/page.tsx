@@ -1,12 +1,18 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
       {/* Header */}
-      <header className="bg-gray-800 h-[33rem]">
-        <div className="max-w-screen-2xl mx-auto">
-          <div>
-            <h1 className="text-4xl font-bold text-center">Header</h1>
-          </div>
+      <header className=" h-auto mx-auto">
+        <div className="flex justify-center max-w-screen-2xl  mx-auto">
+          <Image
+            src="/images/Main.jpg"
+            alt="Logo"
+            width={200}
+            height={200}
+            className="object-cover w-full h-auto"
+          />
         </div>
       </header>
 
