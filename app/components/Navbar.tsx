@@ -36,8 +36,8 @@ export default function Nav() {
 
   const navbarItems: NavItem[] = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/" },
-    { name: "Music", href: "/" },
+    { name: "About", href: "#About" },
+    { name: "Music", href: "#Music" },
   ];
 
   return (
@@ -83,7 +83,7 @@ export default function Nav() {
       <NavbarMenu>
         {navbarItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href={item.href} size="lg">
+            <Link className="w-full" href={item.href}>
               {item.name}
             </Link>
           </NavbarMenuItem>

@@ -1,10 +1,16 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+/*import { Button } from "@heroui/react";*/
+import AnimatedSection from "@/app/components/AnimatedSection";
 
 export default function About() {
   return (
     <section className="bg-[url('/images/aboutBg.png')] bg-cover bg-center w-full px-8">
-      <div className="py-16 gap-5 flex flex-col-reverse justify-center text-neutral-100 max-w-screen-2xl mx-auto | md:flex-row">
+      <AnimatedSection
+        id="About"
+        className="py-16 gap-5 text-neutral-100 flex flex-col-reverse md:flex-row"
+      >
         <div className="text-center mx-auto | md:text-left md:w-[40rem]">
           <h1 className="text-xl pb-8 font-bold | lg:text-2xl">
             About Melolife
@@ -27,6 +33,8 @@ export default function About() {
               holds. Marking his sound with his track “A New Beginning” Melolife
               is here to bring you the next step in the evolution of Frenchcore.
             </p>
+            <br />
+            {/*<Button size="lg">More About</Button>*/}
           </div>
         </div>
         <div className="flex justify-center md:w-[40rem]">
@@ -39,7 +47,7 @@ export default function About() {
             className="w-auto px-4"
           />
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }
