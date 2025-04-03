@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const poppins = Poppins({
   weight: ["400", "700"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased bg-neutral-100`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
